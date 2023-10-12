@@ -1,10 +1,10 @@
 // Iteration 1: Names and Input
 
-let hacker1Name = "maria";
+let hacker1Name = "KamikazE";
 const hacker1 = `The driver's name is ${hacker1Name}`;
 console.log(hacker1);
 
-let hacker2Name = "xxx";
+let hacker2Name = "Acohasean";
 const hacker2 = `The navitator's name is ${hacker2Name}`;
 console.log(hacker2);
 
@@ -102,7 +102,7 @@ let palabraEt = longText.split(" et", " Et");
 let countEt = 0;
 
 for (let i = 0; i < palabraEt.length; i++) {
-  if (palabraEt[i] === " et" && " Et") {
+  if (palabraEt[i] === " et." && " Et." && " et," && " Et,") {
     countEt++;
   }
 }
