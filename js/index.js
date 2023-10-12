@@ -1,10 +1,10 @@
 // Iteration 1: Names and Input
 
-let hacker1Name = "mariano";
+let hacker1Name = "maria";
 const hacker1 = `The driver's name is ${hacker1Name}`;
 console.log(hacker1);
 
-let hacker2Name = "maria";
+let hacker2Name = "xxx";
 const hacker2 = `The navitator's name is ${hacker2Name}`;
 console.log(hacker2);
 
@@ -14,13 +14,13 @@ if (hacker1Name.length > hacker2Name.length) {
   console.log(
     `The driver has the longest name, it has ${
       hacker1Name.length - hacker2Name.length
-    } characters.`
+    } more characters.`
   );
 } else if (hacker1Name.length < hacker2Name.length) {
   console.log(
     `It seems that the navigator has the longest name, it has ${
       hacker2Name.length - hacker1Name.length
-    } characters.`
+    } more characters.`
   );
 } else if (hacker1Name.length === hacker2Name.length) {
   console.log(
@@ -32,19 +32,17 @@ if (hacker1Name.length > hacker2Name.length) {
 
 let hacker1NameMayusEspacio = "";
 
-/*
 for (let i = 0; i < hacker1Name.length; i++) {
-  hacker1NameMayusEspacio += hacker1Name[i] + " "
+  hacker1NameMayusEspacio += hacker1Name[i] + " ";
 }
-console.log(hacker1NameMayusEspacio.toUpperCase())
-*/
+console.log(hacker1NameMayusEspacio.toUpperCase());
 
-/*
+let hacker1AlReves = "";
+
 for (let i = hacker1Name.length - 1; i >= 0; i--) {
-  hacker1NameMayusEspacio += hacker1Name[i]
+  hacker1AlReves += hacker1Name[i];
 }
-console.log(hacker1NameMayusEspacio)
-*/
+console.log(hacker1AlReves);
 
 /*
 for (let i = 0; i < hacker1Name.length && i < hacker2Name.length; i++) {
@@ -61,8 +59,6 @@ console.log("What?! You both have the same name?")
   } 
 }
 */
-
-// Intente hacer condicional para extraer una variable dependiendo de la longitud de los nombres y de esa manera en caso de que todas las letras del nombre fuesen iguales "maria" y "mariana" pero uno tuviese mas letras que otro cuando acabase de comparar saliera una variable la cual meter en el loop y asi elegir bien el nombre no que cuando son las mismas letras y uno tiene mas te de como que son iguales pero no fui capaz
 
 let minLength = Math.min(hacker1Name.length, hacker2Name.length);
 let i;
@@ -100,13 +96,13 @@ for (let i = 0; i < palabras.length; i++) {
   }
 }
 
-console.log(`El texto tiene ${countPalabras} palabras`);
+console.log(`El texto tiene ${countPalabras + 1} palabras`);
 
-let palabraEt = longText.split(" et");
+let palabraEt = longText.split(" et", " Et");
 let countEt = 0;
 
 for (let i = 0; i < palabraEt.length; i++) {
-  if (palabraEt[i] === " et") {
+  if (palabraEt[i] === " et" && " Et") {
     countEt++;
   }
 }
